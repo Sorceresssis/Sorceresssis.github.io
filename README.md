@@ -1,1 +1,1 @@
-# Sorceress的CS note
+# Sorceress's blogs
