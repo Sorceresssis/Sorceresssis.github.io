@@ -1,0 +1,99 @@
+﻿@charset "utf-8";
+
+/***************  HTML Template  ****************
+Author: 何骏涛
+From: 2022/04/09
+End: 2022/05/30
+
+*************  TABLE OF CONTENTS  *************
+1. Fonts
+2. Reset
+3. Global
+4. Header
+5. About
+6. Resume
+7. Services
+8. Works
+9. Blog
+10. Contact
+
+***************************************************/
+
+/*** 
+
+====================================================================
+	Fonts
+====================================================================
+
+ ***/
+
+@font-face {
+	font-family: "";
+	src: url('');
+}
+/*** 
+
+====================================================================
+	Reset
+====================================================================
+
+ ***/
+
+body {
+	margin: 0px;
+	width: 1200px;
+	height: 800px;
+	font-size: 16px;
+	font-family: 'ci';
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul,li {
+	list-style-type: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	align-items: ;
+	width: 200px;
+	height: 700px;
+	background-color: #fa8072;
+}
+
+footer{
+	text-align: center;
+}
+
+
+/*** 
+
+====================================================================
+	Global
+====================================================================
+
+ ***/
+
+.total {
+	display: flex;
+	width: 1600px;
+	height: 700px;
+	background-color: #fedfe1;
+}
+
+.mainmenu {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 150px;
+	height: 200px;
+}
+
+.mainmenu-item {
+	width: 150px;
+	height: 20px;
+}
