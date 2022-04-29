@@ -20,7 +20,6 @@ SPFA(Bellman-ford优化的别称)
 
 
 **邻接矩阵**
-<p id = 1.1></p>
 ```
 #include <iostream>
 using namespace std;
@@ -30,7 +29,6 @@ int main(int argc, const char** argv)
 
 
 **十字链表**
-<p id = 2></p>
 :smile:
 
 <p id = 3> </p>
