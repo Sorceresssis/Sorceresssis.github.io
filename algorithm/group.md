@@ -1,8 +1,10 @@
 Group
-=
+==
 
 Group的储存方式
 --
+Group
+----
 
 * [邻接矩阵](#1.1)
 * [邻接表](#1.2)
@@ -10,7 +12,8 @@ Group的储存方式
 * [十字链表](#1.4)
 * [邻接多重表](#1.5)
 
-##Group的相关算法
+Group的相关算法
+--
 BFS
 DFS
 A*
@@ -32,7 +35,6 @@ int main(int argc, const char** argv)
 ```
 
 <span id = 1.1> **十字链表**</span>
-**十字链表**
 :smile:
 
 $$f(x) = 2^5$$
