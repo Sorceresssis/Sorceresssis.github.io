@@ -1,4 +1,4 @@
-#Group 
+#Group# 
 ##Group的储存方式
 * [邻接矩阵](#1.1)
 * [邻接表](#1.2)
@@ -20,7 +20,7 @@ SPFA(Bellman-ford优化的别称)
 
 
 **邻接矩阵**
-```
+```cpp
 #include <iostream>
 using namespace std;
 
