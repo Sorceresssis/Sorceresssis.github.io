@@ -18,7 +18,7 @@ Floyd
 Bellman-ford（负权值）
 SPFA(Bellman-ford优化的别称)
 
-<p id = 1.1> </p>
+<span id = 1.1> </span>
 **邻接矩阵**
 ```cpp
 #include <iostream>
