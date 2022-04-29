@@ -1,8 +1,5 @@
-Group
-==
-
-Group的储存方式
---
+# Group
+## Group的储存方式
 
 * [邻接矩阵](#1.1)
 * [邻接表](#1.2)
@@ -35,4 +32,4 @@ int main(int argc, const char** argv)
 <span id = 1.1> **十字链表**</span>
 :smile:
 
-$$f(x) = 2^5$$
+$ f(x) = 2^5 $
