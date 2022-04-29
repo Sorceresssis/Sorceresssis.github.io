@@ -18,7 +18,7 @@ Floyd
 Bellman-ford（负权值）
 SPFA(Bellman-ford优化的别称)
 
-
+<a id = 1.1> </a>
 **邻接矩阵**
 ```cpp
 #include <iostream>
@@ -33,4 +33,4 @@ int main(int argc, const char** argv)
 
 <p id = 3> </p>
 
-$f(x) = 2^5$
+$$f(x) = 2^5$$
