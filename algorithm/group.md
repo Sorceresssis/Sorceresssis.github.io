@@ -32,4 +32,4 @@ int main(int argc, const char** argv)
 <span id = 1.1> **十字链表**</span>
 :smile:
 
-$ f(x) = 2^5 $
+\( f(x) = 2^5 $ \)
