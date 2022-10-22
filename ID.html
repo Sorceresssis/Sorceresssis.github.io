@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID</title>
+</head>
+
+<body>
+    <p>新用户? <a href="#">新建用户</a></p>
+    <form action="">
+        <label for="username">用户名: </label>
+        <input type="text" name="username" id="username" value="长度为1~10" minlength="1" maxlength="10"> <br>
+
+        <p class="common">密码长度6~20</p>
+        <label for="password">密码: </label>
+        <input type="password" name="password" id="password" minlength="6" maxlength="20"> <br>
+
+        性别:<label for="man">男</label>
+        <input type="radio" name="sex" id="man" checked="checked">
+        <label for="woman">女</label>
+        <input type="radio" name="sex" id="woman"> <br>
+
+        爱好: 唱<input type="checkbox" name="like" id="">
+        跳<input type="checkbox" name="like" id="">
+        rap<input type="checkbox" name="like" id="">
+        篮球<input type="checkbox" name="like" id=""> <br>
+
+        籍贯: 省
+        <select name="" id="">
+            <option>北京</option>
+            <option>上海</option>
+            <option>天津</option>
+            <option>北京</option>
+        </select> <br>
+
+        <p>建议</p>
+        <textarea name="" id="" cols="30" rows="10"></textarea> <br>
+
+        上传头像: <input type="file" name="face" id=""> <br>
+
+        <input type="submit" value="登录">
+    </form>
+</body>
+
+</html>
