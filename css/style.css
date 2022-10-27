@@ -25,6 +25,11 @@ End: 2022/
 
 @import url(../css/font-awesome.css);
 
+@font-face {
+	font-family: roman;
+	src: url(../fonts/roman-font-7-1.ttf);
+}
+
 /*** 
 
 ====================================================================
@@ -92,6 +97,7 @@ li {
 	background: #fff;
 	font-size: 14px;
 	line-height: 64px;
+	z-index: 1000;
 }
 
 .logo {
@@ -221,9 +227,114 @@ li {
 
  ***/
 .root-content {
-	background: #000;
+	background: #fff;
 }
 
-.main-wrapper img {
+.main-content {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.bg-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.bg-img img {
 	display: block;
+}
+
+.bg-text {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: 20%;
+	font: 400 40px/1em 'Roman';
+
+}
+
+.saying-bar {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 40px 0;
+	text-align: center;
+}
+
+.saying-bar h3 {
+	font-size: 30px;
+	margin: 5px 0;
+}
+
+.intro-wrapper {
+	margin: 0 auto;
+}
+
+.introList {
+	width: 1080px;
+	margin: 0 auto;
+	/* background: pink; */
+}
+
+.introItem {
+	float: left;
+	width: 320px;
+	height: 200px;
+	margin: 20px;
+	background: skyblue;
+}
+
+.blogList-wrapper {
+	width: 1060px;
+	margin: 0 auto;
+}
+
+.blogList-item {
+	height: 200px;
+	margin: 10px;
+	padding: 20px;
+	background: skyblue;
+}
+
+.blogList-item .img {
+	float: left;
+	width: 250px;
+}
+
+.blogList-item img {
+	width: 100%;
+}
+
+.more-blog-btn {
+	width: 100px;
+	height: 40px;
+	margin: 20px auto;
+	background: green;
+}
+
+/*** 
+====================================================================
+	Footer
+====================================================================
+
+ ***/
+
+.footer-container {
+	width: 100%;
+	background: #f1f1f1;
+}
+
+.footer-wrapper {
+	width: 1200px;
+	height: 600px;
+	margin: 0 auto;
+}
+
+.footer-navList {
+	padding: 20px 0;
+	height: 200px;
+}
+
+.footer-navItem {
+	float: left;
+	margin: 0 50px;
 }
