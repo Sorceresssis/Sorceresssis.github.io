@@ -41,6 +41,11 @@ navList_firstItem.onclick = function (event) {
         document.onclick = null;
     }
 }
+popup_first.onclick = function (event) {
+    //只阻止了向上冒泡，而没有阻止向下捕获，所以点击popup_first的内部对象时，仍然可以执行这个函数
+    stopBubble(event);
+}
+
 
 /* popup-second */
 const navList_secondItem = document.getElementById('navList-secondItem');
@@ -70,7 +75,9 @@ navList_secondItem.onclick = function (event) {
         document.onclick = null;
     }
 }
-
+popup_second.onclick = function (event) {
+    stopBubble(event);
+}
 
 /* popup-third */
 const navList_thirdItem = document.getElementById('navList-thirdItem');
@@ -99,6 +106,9 @@ navList_thirdItem.onclick = function (event) {
         angle_down_third.style.transform = 'rotateX(0deg)'
         document.onclick = null;
     }
+}
+popup_third.onclick = function (event) {
+    stopBubble(event);
 }
 
 /* popup-fourth */
@@ -129,6 +139,9 @@ navList_fourthItem.onclick = function (event) {
         document.onclick = null;
     }
 }
+popup_fourth.onclick = function (event) {
+    stopBubble(event);
+}
 
 /* popup-search */
 const search_close = document.getElementById('search-close')
@@ -158,6 +171,9 @@ search_btn.onclick = function (event) {
         document.onclick = null;
     }
 }
+popup_search.onclick = function (event) {
+    stopBubble(event);
+}
 
 //search-close
 search_close.onclick = function (event) {
@@ -173,10 +189,7 @@ search_close.onclick = function (event) {
         document.onclick = null;
     }
 }
-popup_first.onclick = function (event) {
-    //只阻止了向上冒泡，而没有阻止向下捕获，所以点击popup_first的内部对象时，仍然可以执行这个函数
-    stopBubble(event);
-}
+
 // 阻止冒泡函数
 function stopBubble(e) {
     if (e && e.stopPropagation) {
