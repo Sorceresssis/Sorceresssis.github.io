@@ -120,11 +120,11 @@ li {
 	color: #3b2927;
 }
 
-.navList-left li {
+.navList-left>ul>li {
 	float: left;
 }
 
-.navList-left li a {
+.navList-left>ul>li a {
 	display: block;
 	padding: 0 20px;
 }
@@ -169,7 +169,6 @@ li {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 40px 0;
-	/* background: skyblue; */
 }
 
 .popup-first {
@@ -184,14 +183,40 @@ li {
 	height: 400px;
 }
 
-.popup-fourth {
-	height: 400px;
+.about-me>ul>li {
+	float: left;
+	width: 200px;
+	padding: 0 50px;
+	line-height: 25px;
 }
 
-.about-us img {
+.me-intro h3 {
+	padding-top: 5px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #3e3e3e;
+}
+
+.me-profile {
+	position: relative;
+}
+
+.me-profile img {
 	width: 200px;
 	border: 2px solid #d0d7de;
 	border-radius: 50%;
+}
+
+.about-me h4 {
+	margin-top: 5px;
+	border-bottom: 1px solid #ccc;
+	color: #3e3e3e;
+	line-height: 30px;
+}
+
+.about-me p {
+	line-height: 30px;
+	color: #666;
 }
 
 .popup-search {
