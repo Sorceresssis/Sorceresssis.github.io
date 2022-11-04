@@ -7,10 +7,10 @@ document.onmousewheel = function () {
     popup_search.style.display = 'none'
     search_btn.style.display = 'inline'
     search_close.style.display = 'none'
-    angle_down_first.style.transform = 'rotateX(0deg)'
-    angle_down_second.style.transform = 'rotateX(0deg)'
-    angle_down_third.style.transform = 'rotateX(0deg)'
-    angle_down_fourth.style.transform = 'rotateX(0deg)'
+    angle_down_first.style.transform = 'rotateZ(0deg)'
+    angle_down_second.style.transform = 'rotateZ(0deg)'
+    angle_down_third.style.transform = 'rotateZ(0deg)'
+    angle_down_fourth.style.transform = 'rotateZ(0deg)'
 }
 
 /* popup-first */
@@ -24,20 +24,20 @@ navList_firstItem.onclick = function (event) {
     popup_search.style.display = 'none'
     search_btn.style.display = 'inline'
     search_close.style.display = 'none'
-    angle_down_second.style.transform = 'rotateX(0deg)'
-    angle_down_third.style.transform = 'rotateX(0deg)'
-    angle_down_fourth.style.transform = 'rotateX(0deg)'
+    angle_down_second.style.transform = 'rotateZ(0deg)'
+    angle_down_third.style.transform = 'rotateZ(0deg)'
+    angle_down_fourth.style.transform = 'rotateZ(0deg)'
     if (popup_first.style.display == 'block') {
         popup_first.style.display = 'none'
-        angle_down_first.style.transform = 'rotateX(0deg)'
+        angle_down_first.style.transform = 'rotateZ(0deg)'
     } else {
         popup_first.style.display = 'block'
-        angle_down_first.style.transform = 'rotateX(180deg)'
+        angle_down_first.style.transform = 'rotateZ(180deg)'
     }
     stopBubble(event);
     document.onclick = function () {
         popup_first.style.display = 'none';
-        angle_down_first.style.transform = 'rotateX(0deg)'
+        angle_down_first.style.transform = 'rotateZ(0deg)'
         document.onclick = null;
     }
 }
@@ -58,20 +58,20 @@ navList_secondItem.onclick = function (event) {
     popup_search.style.display = 'none'
     search_btn.style.display = 'inline'
     search_close.style.display = 'none'
-    angle_down_first.style.transform = 'rotateX(0deg)'
-    angle_down_third.style.transform = 'rotateX(0deg)'
-    angle_down_fourth.style.transform = 'rotateX(0deg)'
+    angle_down_first.style.transform = 'rotateZ(0deg)'
+    angle_down_third.style.transform = 'rotateZ(0deg)'
+    angle_down_fourth.style.transform = 'rotateZ(0deg)'
     if (popup_second.style.display == 'block') {
         popup_second.style.display = 'none'
-        angle_down_second.style.transform = 'rotateX(0deg)'
+        angle_down_second.style.transform = 'rotateZ(0deg)'
     } else {
         popup_second.style.display = 'block'
-        angle_down_second.style.transform = 'rotateX(180deg)'
+        angle_down_second.style.transform = 'rotateZ(180deg)'
     }
     stopBubble(event);
     document.onclick = function () {
         popup_second.style.display = 'none';
-        angle_down_second.style.transform = 'rotateX(0deg)'
+        angle_down_second.style.transform = 'rotateZ(0deg)'
         document.onclick = null;
     }
 }
@@ -90,20 +90,20 @@ navList_thirdItem.onclick = function (event) {
     popup_search.style.display = 'none'
     search_btn.style.display = 'inline'
     search_close.style.display = 'none'
-    angle_down_first.style.transform = 'rotateX(0deg)'
-    angle_down_second.style.transform = 'rotateX(0deg)'
-    angle_down_fourth.style.transform = 'rotateX(0deg)'
+    angle_down_first.style.transform = 'rotateZ(0deg)'
+    angle_down_second.style.transform = 'rotateZ(0deg)'
+    angle_down_fourth.style.transform = 'rotateZ(0deg)'
     if (popup_third.style.display == 'block') {
         popup_third.style.display = 'none'
-        angle_down_third.style.transform = 'rotateX(0deg)'
+        angle_down_third.style.transform = 'rotateZ(0deg)'
     } else {
         popup_third.style.display = 'block'
-        angle_down_third.style.transform = 'rotateX(180deg)'
+        angle_down_third.style.transform = 'rotateZ(180deg)'
     }
     stopBubble(event);
     document.onclick = function () {
         popup_third.style.display = 'none';
-        angle_down_third.style.transform = 'rotateX(0deg)'
+        angle_down_third.style.transform = 'rotateZ(0deg)'
         document.onclick = null;
     }
 }
@@ -122,20 +122,20 @@ navList_fourthItem.onclick = function (event) {
     popup_search.style.display = 'none'
     search_btn.style.display = 'inline'
     search_close.style.display = 'none'
-    angle_down_first.style.transform = 'rotateX(0deg)'
-    angle_down_second.style.transform = 'rotateX(0deg)'
-    angle_down_third.style.transform = 'rotateX(0deg)'
+    angle_down_first.style.transform = 'rotateZ(0deg)'
+    angle_down_second.style.transform = 'rotateZ(0deg)'
+    angle_down_third.style.transform = 'rotateZ(0deg)'
     if (popup_fourth.style.display == 'block') {
         popup_fourth.style.display = 'none'
-        angle_down_fourth.style.transform = 'rotateX(0deg)'
+        angle_down_fourth.style.transform = 'rotateZ(0deg)'
     } else {
         popup_fourth.style.display = 'block'
-        angle_down_fourth.style.transform = 'rotateX(180deg)'
+        angle_down_fourth.style.transform = 'rotateZ(180deg)'
     }
     stopBubble(event);
     document.onclick = function () {
         popup_fourth.style.display = 'none';
-        angle_down_fourth.style.transform = 'rotateX(0deg)'
+        angle_down_fourth.style.transform = 'rotateZ(0deg)'
         document.onclick = null;
     }
 }
@@ -154,10 +154,10 @@ search_btn.onclick = function (event) {
     popup_fourth.style.display = 'none'
     search_close.style.display = 'inline'
     search_btn.style.display = 'none'
-    angle_down_first.style.transform = 'rotateX(0deg)'
-    angle_down_second.style.transform = 'rotateX(0deg)'
-    angle_down_third.style.transform = 'rotateX(0deg)'
-    angle_down_fourth.style.transform = 'rotateX(0deg)'
+    angle_down_first.style.transform = 'rotateZ(0deg)'
+    angle_down_second.style.transform = 'rotateZ(0deg)'
+    angle_down_third.style.transform = 'rotateZ(0deg)'
+    angle_down_fourth.style.transform = 'rotateZ(0deg)'
     if (popup_search.style.display == 'block') {
         popup_search.style.display = 'none'
     } else {

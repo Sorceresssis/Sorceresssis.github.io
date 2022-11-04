@@ -12,6 +12,7 @@ End: 2022/
 4. Header
 5. Popup-box
 6. Main
+7. 
 
 **********************************************/
 
@@ -45,10 +46,6 @@ End: 2022/
 	color: #000;
 }
 
-.fa-angle-down {
-	margin-left: 5px;
-}
-
 /*** 
 
 ====================================================================
@@ -57,19 +54,11 @@ End: 2022/
 
  ***/
 
-
-
-
 .clearfix::after {
 	display: block;
 	content: "";
 	height: 0;
 	clear: both;
-}
-
-.page-width {
-	width: 1400px;
-	margin: 0 auto;
 }
 
 ul,
@@ -84,20 +73,25 @@ li {
 ====================================================================
 
  ***/
-.navbar {
+.header-wrapper {
 	width: 100%;
 	height: 64px;
 }
 
-.nav-wrapper {
+header {
 	position: fixed;
 	left: 0;
 	right: 0;
-	height: 64px;
 	background: #fff;
 	font-size: 14px;
 	line-height: 64px;
 	z-index: 1000;
+}
+
+.nav {
+	width: 1400px;
+	height: 64px;
+	margin: 0 auto;
 }
 
 .logo {
@@ -129,13 +123,12 @@ li {
 	padding: 0 20px;
 }
 
-.navList-left li a:hover {
+.navList-left>ul>li a:hover {
 	background: #f8f8f8;
 }
 
-.navList-right a:hover,
-.navList-right span:hover {
-	color: #2b9af3;
+.navList-left>ul>li span {
+	margin-left: 5px;
 }
 
 .navList-right>div {
@@ -144,14 +137,23 @@ li {
 }
 
 .navList-right a span {
-	font-size: 20px;
 	margin-right: 10px;
+	font-size: 20px;
+}
+
+.navList-right a:hover,
+.navList-right span:hover {
+	color: #2b9af3;
+}
+
+.navList-left li a span {
+	transition: 0.3s;
 }
 
 /*** 
 
 ====================================================================
-	Popup-box
+	5.Popup-box
 ====================================================================
 
  ***/
@@ -253,14 +255,10 @@ li {
 
 /*** 
 ====================================================================
-	Main
+	6.Main
 ====================================================================
 
  ***/
-
-.root-content {
-	background: #fff;
-}
 
 .main-content {
 	width: 1200px;
@@ -272,7 +270,6 @@ li {
 	width: 100%;
 	height: 446.5px;
 }
-
 
 .bg-img img {
 	display: block;
@@ -293,12 +290,11 @@ li {
 	position: absolute;
 	right: 150px;
 	bottom: 100px;
-	font: 400 35px/1em 'Roman';
+	font: 400 35px 'Roman';
 
 }
 
 .saying-bar {
-	margin: 0 auto;
 	padding: 40px 0;
 	text-align: center;
 }
@@ -380,7 +376,8 @@ li {
 .blog-content {
 	width: 1070px;
 	margin: 40px auto;
-	padding: 30px 0;
+	padding: 30px;
+	box-sizing: border-box;
 	box-shadow: 2px 2px 50px #dbe0f4;
 	overflow: hidden;
 }
@@ -389,7 +386,7 @@ li {
 	float: left;
 	width: 280px;
 	height: 180px;
-	margin: 0 40px;
+	margin-right: 20px;
 	border: 1px solid #dbe0f4;
 }
 
@@ -400,46 +397,54 @@ li {
 	/* 图片铺满div元素不变形，超出部分隐藏，保留中心部分 */
 }
 
-.blog-item a:hover {
-	color: #2b9af3;
+.blog-intro {
+	height: 95px;
+	margin-top: 5px;
 }
 
-.blog-item h2 {
-	display: inline-block;
-	text-overflow: ellipsis;
-	line-height: 40px;
+.blog-intro h2 {
+	max-height: 50px;
+	line-height: 25px;
+	font-size: 20px;
+	overflow: hidden;
+	color: #3b2927;
+}
+
+.blog-intro p {
+	height: 40px;
+	font-size: 14px;
+	line-height: 20px;
+	margin-top: 5px;
+	overflow: hidden;
+}
+
+.blog-item a:hover {
+	color: #2b9af3;
 }
 
 .blog-item a:hover h2 {
 	color: #2b9af3;
 }
 
-.blog-intro {
-	font-size: 14px;
-	line-height: 25px;
+.blog-tag li {
+	display: inline;
 }
 
 .blog-author,
 .blog-tag,
-.blog-tag a {
+.blog-tag a,
+.blog-tag h5 {
 	font-size: 14px;
 	line-height: 25px;
 	color: #4b4b4b;
+	font-weight: 400;
 	font-style: italic;
-}
-
-.blog-tag li {
-	display: inline;
 }
 
 .blog-time {
 	line-height: 25px;
 	font-size: 14px;
 	color: #999999;
-}
-
-.blog-item .fa-heart-o {
-	color: #ff0000;
 }
 
 .more-blog-btn {
