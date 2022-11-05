@@ -32,7 +32,7 @@ navList_firstItem.onclick = function (event) {
         angle_down_first.style.transform = 'rotateZ(0deg)'
     } else {
         popup_first.style.display = 'block'
-        angle_down_first.style.transform = 'rotateZ(180deg)'
+        angle_down_first.style.transform = 'rotateZ(-180deg)'
     }
     stopBubble(event);
     document.onclick = function () {
@@ -66,7 +66,7 @@ navList_secondItem.onclick = function (event) {
         angle_down_second.style.transform = 'rotateZ(0deg)'
     } else {
         popup_second.style.display = 'block'
-        angle_down_second.style.transform = 'rotateZ(180deg)'
+        angle_down_second.style.transform = 'rotateZ(-180deg)'
     }
     stopBubble(event);
     document.onclick = function () {
@@ -98,7 +98,7 @@ navList_thirdItem.onclick = function (event) {
         angle_down_third.style.transform = 'rotateZ(0deg)'
     } else {
         popup_third.style.display = 'block'
-        angle_down_third.style.transform = 'rotateZ(180deg)'
+        angle_down_third.style.transform = 'rotateZ(-180deg)'
     }
     stopBubble(event);
     document.onclick = function () {
@@ -130,7 +130,7 @@ navList_fourthItem.onclick = function (event) {
         angle_down_fourth.style.transform = 'rotateZ(0deg)'
     } else {
         popup_fourth.style.display = 'block'
-        angle_down_fourth.style.transform = 'rotateZ(180deg)'
+        angle_down_fourth.style.transform = 'rotateZ(-180deg)'
     }
     stopBubble(event);
     document.onclick = function () {

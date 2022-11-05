@@ -12,7 +12,7 @@ End: 2022/
 4. Header
 5. Popup-box
 6. Main
-7. 
+7. Footer
 
 **********************************************/
 
@@ -118,12 +118,12 @@ header {
 	float: left;
 }
 
-.navList-left>ul>li a {
+.navList-left>ul>li>a {
 	display: block;
 	padding: 0 20px;
 }
 
-.navList-left>ul>li a:hover {
+.navList-left>ul>li>a:hover {
 	background: #f8f8f8;
 }
 
@@ -147,7 +147,7 @@ header {
 }
 
 .navList-left li a span {
-	transition: 0.3s;
+	transition: 0.2s;
 }
 
 /*** 
@@ -158,7 +158,7 @@ header {
 
  ***/
 
-.popup-box {
+.popup-wrapper {
 	display: none;
 	position: absolute;
 	left: 0;
@@ -167,28 +167,16 @@ header {
 	background: #fafafa;
 }
 
-.popup-width {
+.popup-box {
 	width: 1200px;
 	margin: 0 auto;
 	padding: 40px 0;
 }
 
-.popup-first {
-	height: 400px;
-}
-
-.popup-second {
-	height: 400px;
-}
-
-.popup-third {
-	height: 400px;
-}
-
-.about-me>ul>li {
+.popup-box>ul>li {
 	float: left;
-	width: 200px;
-	padding: 0 50px;
+	width: 220px;
+	margin: 0 40px;
 	line-height: 25px;
 }
 
@@ -204,7 +192,7 @@ header {
 }
 
 .me-profile img {
-	width: 200px;
+	width: 196px;
 	border: 2px solid #d0d7de;
 	border-radius: 50%;
 }
@@ -462,7 +450,7 @@ header {
 
 /*** 
 ====================================================================
-	Footer
+	7.Footer
 ====================================================================
 
  ***/
