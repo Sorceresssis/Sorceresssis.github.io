@@ -24,7 +24,7 @@ End: 2022/
 
  ***/
 
-@import url(../css/font-awesome.css);
+@import url(./font-awesome.min.css);
 
 @font-face {
 	font-family: 'roman';
@@ -180,10 +180,24 @@ header {
 	line-height: 25px;
 }
 
-.me-intro h3 {
-	padding-top: 5px;
+.popup-box>ul>li>div {
+	margin-bottom: 5px;
+}
+
+.popup-box>ul>li>div a,
+.about-me p {
+	line-height: 30px;
+	color: #666;
+}
+
+.popup-box>ul>li>div a:hover {
+	color: #9795f0;
 	font-weight: 700;
-	font-size: 20px;
+}
+
+.popup-box h4 {
+	line-height: 30px;
+	border-bottom: 2px solid #dbe0f4;
 	color: #3e3e3e;
 }
 
@@ -197,16 +211,9 @@ header {
 	border-radius: 50%;
 }
 
-.about-me h4 {
-	margin-top: 5px;
-	border-bottom: 1px solid #ccc;
-	color: #3e3e3e;
-	line-height: 30px;
-}
-
-.about-me p {
-	line-height: 30px;
-	color: #666;
+.me-intro .resume a,
+.resume span {
+	color: #2b9af3;
 }
 
 .popup-search {
