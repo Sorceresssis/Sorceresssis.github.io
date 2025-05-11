@@ -34,7 +34,7 @@ navList_firstItem.onclick = function (event) {
         popup_first.style.display = 'block'
         angle_down_first.style.transform = 'rotateZ(-180deg)'
     }
-    stopBubble(event);
+    event.stopPropagation() // 点击时也要阻止冒泡到document,避免关闭盒子；
     document.onclick = function () {
         popup_first.style.display = 'none';
         angle_down_first.style.transform = 'rotateZ(0deg)'
@@ -42,6 +42,7 @@ navList_firstItem.onclick = function (event) {
     }
 }
 popup_first.onclick = function (event) {
+    // 阻止点击事件冒泡到docment.就不会触发，关闭盒子；
     //只阻止了向上冒泡，而没有阻止向下捕获，所以点击popup_first的内部对象时，仍然可以执行这个函数
     stopBubble(event);
 }
